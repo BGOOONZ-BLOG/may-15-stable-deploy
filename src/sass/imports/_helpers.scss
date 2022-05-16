@@ -1,0 +1,88 @@
+ Text for screen readers .screen-reader-text {
+     clip: rect(1px, 1px, 1px, 1px);
+     clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+     height: 1px;
+     overflow: hidden;
+     position: absolute !important;
+     width: 1px;
+     word-wrap: normal !important
+ }
+
+ Heading decorations .line-left {
+     position: relative
+ }
+
+ Responsive video wrappers .js-reframe {
+     margin: 1.875em 0
+ }
+
+ .important,
+ Notifications,
+ allerts .note {
+     border-radius: $border-radius;
+     color: $gray-700;
+     margin: 1.875em 0;
+     padding: 1em 1.125em
+ }
+
+ .important,
+ .note {
+     border-left: 5px solid
+ }
+
+ Background gradients .has-gradient {
+     background: -webkit-gradient(linear, left top, right top, from($color-secondary), to($color-primary));
+     background: linear-gradient(to right, $color-secondary, $color-primary);
+     color: #fff;
+     position: relative
+ }
+
+ .button-secondary {
+     color: #fff !important
+ }
+
+ .inner-sm {
+     position: relative
+ }
+
+ Grid .grid {
+     display: -ms-flexbox;
+     margin: 0 auto !important;
+     display: flex;
+     border-radius: 5px;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap
+ }
+
+ .grid-item {
+     box-sizing: border-box;
+     margin: 0 auto !important;
+     padding-left: $grid-gap/2;
+     padding-right: $grid-gap/2;
+     position: relative;
+     width: 100%;
+     padding-left: $container-padding/2;
+     padding-right: $container-padding/2
+ }
+
+ .grid-center {
+     -ms-flex-pack: center;
+     justify-content: center
+ }
+
+ .grid-swap {
+     -ms-flex-direction: row-reverse;
+     flex-direction: row-reverse
+ }
+
+ .grid-middle {
+     -ms-flex-align: center;
+     align-items: center
+ }
+
+ @media only screen and (min-width:641px) {
+     .grid-col-2 {
+         flex: 0 0 50%;
+         max-width: 50%
+     }
+ }
